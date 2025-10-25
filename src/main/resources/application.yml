@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: ssia-ch15-ex1
+server:
+  port: 9090
+
+jwt:
+  key:
+    url: http://localhost:8080/oauth2/jwks
+    introspectionUri: http://localhost:7070/oauth2/introspect
+
+resourceserver:
+    clientID: resource_server
+    secret: resource_server_secret
+
+logging:
+  level:
+    root: trace
